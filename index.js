@@ -150,3 +150,12 @@
             observer.observe(section);
         });
 
+window.addEventListener("load", () => {
+  document.getElementById("preloader").classList.add("hidden");
+});
+
+// Force remove after 3 seconds (fallback)
+setTimeout(() => {
+  document.getElementById("preloader").classList.add("hidden");
+}, 5000);
+
