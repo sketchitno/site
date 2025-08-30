@@ -125,40 +125,7 @@
             showTestimonial(currentTestimonial);
         }, 5000);
         
-        // // Form submission
-        // const contactForm = document.getElementById('contactForm');
-        
-        // contactForm.addEventListener('submit', (e) => {
-        //     e.preventDefault();
-            
-        //     // Get form values
-        //     const name = document.getElementById('name').value;
-        //     const email = document.getElementById('email').value;
-        //     const subject = document.getElementById('subject').value;
-        //     const message = document.getElementById('message').value;
-            
-        //     // Here you would normally send the form data to a server
-        //     // For this example, we'll just show a success message
-        //     const formElements = contactForm.querySelectorAll('.form-control, .submit-btn');
-        //     formElements.forEach(el => el.disabled = true);
-            
-        //     const submitBtn = contactForm.querySelector('.submit-btn');
-        //     const originalText = submitBtn.textContent;
-        //     submitBtn.textContent = 'Sending...';
-            
-        //     // Simulate form submission
-        //     setTimeout(() => {
-        //         contactForm.innerHTML = `
-        //             <div style="text-align: center; padding: 20px;">
-        //                 <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--accent-green); margin-bottom: 20px;"></i>
-        //                 <h3>Message Sent Successfully!</h3>
-        //                 <p>Thank you, ${name}. We've received your message and will get back to you soon.</p>
-        //                 <button class="submit-btn" style="margin-top: 20px;" onclick="location.reload()">Send Another Message</button>
-        //             </div>
-        //         `;
-        //     }, 1500);
-        // });
-        
+
         // Add animation on scroll
         const observerOptions = {
             root: null,
@@ -182,3 +149,8 @@
             section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(section);
         });
+
+        window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  preloader.classList.add("hidden");
+});
