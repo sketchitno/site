@@ -914,3 +914,97 @@
                 margin: 5px 0;
             }
         }
+
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--primary-dark);
+    color: var(--text-light);
+}
+
+.client-card-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    background: var(--secondary-dark);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.client-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--primary-dark);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    min-height: 500px; /* Large card height */
+}
+
+.client-card-text, .client-card-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-card-text {
+    flex-direction: column;
+    padding: 60px;
+    text-align: left;
+}
+
+.client-card-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--accent-blue);
+}
+
+.client-card-text p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: var(--text-dim);
+}
+
+.client-login-btn {
+    padding: 18px 40px;
+    background: var(--accent-blue);
+    color: var(--primary-dark);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: var(--transition);
+    color: #380000;
+}
+
+.client-login-btn:hover {
+    background: var(--accent-green);
+    color: rgb(0, 0, 104);
+}
+
+.client-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media(max-width: 900px){
+    .client-card {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .client-card-text, .client-card-image {
+        width: 100%;
+        height: 300px;
+    }
+    .client-card-text {
+        text-align: center;
+        padding: 40px;
+    }
+}
