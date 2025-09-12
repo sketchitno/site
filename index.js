@@ -159,3 +159,7 @@ setTimeout(() => {
   document.getElementById("preloader").classList.add("hidden");
 }, 5000);
 
+const btn = document.querySelector('.client-login-btn');
+btn.addEventListener('click', () => {
+    window.location.href = 'login.html';
+});
