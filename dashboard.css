@@ -1,0 +1,158 @@
+/* 🌿 Dashboard Styles */
+
+/* Reset */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5fdf7;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* ✅ Green Header */
+.dashboard-header {
+  background: linear-gradient(90deg, #e7ffd4, #e7ffd4);
+  padding: 15px 40px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* ✅ Layout */
+.dashboard-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+
+.image-c {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  flex: 1;
+}
+.dashboard-container{
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+/* ✅ Typography */
+h2 {
+  color: #000000;
+}
+
+h3 {
+  color: #388e3c;
+}
+
+p {
+  color: #555;
+}
+
+/* ✅ Progress Bar */
+.progress-bar {
+  width: 100%;
+  background: #ddd;
+  border-radius: 10px;
+  margin: 15px 0;
+  height: 10px;
+}
+
+#progress {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  width: 0;
+}
+
+/* ✅ Milestones */
+#milestones {
+  text-align: start;
+  list-style: none;
+  padding: 0;
+}
+
+#milestones li {
+  padding: 10px;
+  margin: 8px 0;
+  border-left: 4px solid #2e7d32;
+  background: #f0fdf4;
+  border-radius: 8px;
+}
+
+/* ✅ Buttons */
+button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #256428;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+}
+.logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--accent-green);
+        }
+
+        .logo i {
+            margin-right: 10px;
+            color: var(--accent-blue);
+        }

@@ -1,0 +1,51 @@
+{
+  "projects": [
+    {
+      "username": "famitha",
+      "password": "mehandi123",
+      "name": "website",
+      "status": "Completed",
+      "started-date": "03 june 2025",
+      "expected-end-date": "07 june 2025",
+      "end-date": "07 june 2025",
+      "link": "https://blinxo-1.github.io/mehandi/",
+
+      "progress": 100,
+      "milestones": {
+        "Requirement Analysis": "Complete",
+        "Page": "single page website",
+        "UI/UX Design": "Complete",
+        "Header": "Complete",
+        "Sections": "9",
+        "Footer": "Complete",
+        "Testing": "Complete"
+      },
+      "image": "photos-cl/Screenshot 2025-09-12 064259.png"
+    },
+    {
+      "username": "faris",
+      "password": "grand",
+      "name": "e-commerce website",
+      "status": "working",
+      "started-date": "08 sep 2025",
+      "expected-end-date": "22 sep 2025",
+      "end-date": "----",
+      "link": "----",
+
+      "progress": 23,
+      "milestones": {
+        "Requirement Analysis": "Complete",
+        "Page": "multi page website",
+        "UI/UX Design": "Complete",
+        "Header": "Complete",
+        "Product Card Design": "Complete",
+        "Sections": "4",
+        "Totel Products": "105", 
+        "Updated Products": "13", 
+        "Footer": "pending", 
+        "Testing": "pending"
+      },
+      "image": "photos-cl/Screenshot 2025-08-31 130255.png"
+    }
+  ]
+}

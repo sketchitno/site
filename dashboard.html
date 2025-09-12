@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Sketchno</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <!-- 🌿 Navbar (Logo Only) -->
+  <header class="dashboard-header">
+    <div class="header-container">
+       <a href="index.html" class="logo">
+                <img src="photos/logoonly.png" style="width: 40px;" alt="">
+                Sketch<span style="color: #39ff14;">no</span>
+       </a>
+    </div>
+  </header>
+
+  <!-- ✅ Main Layout -->
+  <div class="dashboard-layout">
+    <div class="dashboard-container">
+        <h2 id="welcome"></h2>
+        <h3 id="projectName"></h3>
+        <h3 id="started"></h3>
+        <h3 id="expected"></h3>
+        <h3 id="enddate"></h3>
+        <h3 id="link"></h3>
+        <p id="status"></p>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <h4>Milestones:</h4>
+        <ul id="milestones"></ul>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="image-c">
+      <h1>Preview</h1>
+      <div id="image"></div>
+    </div>
+  </div>
+    
+  <script src="script.js"></script>
+</body>
+</html>

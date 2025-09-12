@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5fdf7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container, .dashboard-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+}
+.image-c {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  /* width: 300px; */
+}
+
+h2 {
+  color: #2e7d32; /* Green theme */
+}
+
+button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #256428;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #2e7d32;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #ddd;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+#progress {
+  height: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  width: 0;
+}
+
+.note {
+  font-size: 12px;
+  color: gray;
+}
+
+.image{
+  width: 100px;
+}
+#milestones{
+  text-align: start;
+}
+
+/* ✅ Green Header */
+.dashboard-header {
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  padding: 15px 40px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
