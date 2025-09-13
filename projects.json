@@ -54,11 +54,11 @@
       "expected-end-date": "12 sep 2025",
       "end-date": "----",
       "link": "----",
-      "progress": 28,
+      "progress": 72,
       "milestones": {
         "background": "Complete",
         "Page": "poster",
-        "Heading": "pending",
+        "Heading": "Complete",
         "Footer": "pending",
         "Sections": "2"
 
@@ -68,4 +68,5 @@
    
   ]
 }
+
 
