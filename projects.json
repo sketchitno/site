@@ -9,7 +9,6 @@
       "expected-end-date": "07 june 2025",
       "end-date": "07 june 2025",
       "link": "https://blinxo-1.github.io/mehandi/",
-
       "progress": 100,
       "milestones": {
         "Requirement Analysis": "Complete",
@@ -31,7 +30,6 @@
       "expected-end-date": "22 sep 2025",
       "end-date": "----",
       "link": "----",
-
       "progress": 23,
       "milestones": {
         "Requirement Analysis": "Complete",
@@ -40,12 +38,33 @@
         "Header": "Complete",
         "Product Card Design": "Complete",
         "Sections": "4",
-        "Totel Products": "105", 
-        "Updated Products": "13", 
-        "Footer": "pending", 
+        "Totel Products": "105",
+        "Updated Products": "13",
+        "Footer": "pending",
         "Testing": "pending"
       },
       "image": "photos-cl/Screenshot 2025-08-31 130255.png"
+    },
+    {
+      "username": "nabeel",
+      "password": "iffah",
+      "name": " invitation poster",
+      "status": "Working",
+      "started-date": "12 sep 2025",
+      "expected-end-date": "12 sep 2025",
+      "end-date": "----",
+      "link": "----",
+      "progress": 28,
+      "milestones": {
+        "background": "Complete",
+        "Page": "poster",
+        "Heading": "pending",
+        "Footer": "pending",
+        "Sections": "2"
+
+      },
+      "image": "photos-cl/nabbelkka.png"
     }
+   
   ]
 }
