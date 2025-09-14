@@ -49,17 +49,17 @@
       "username": "iffah food products",
       "password": "iffah898",
       "name": " invitation poster",
-      "status": "Working",
-      "started-date": "12 sep 2025",
-      "expected-end-date": "13 sep 2025",
-      "end-date": "----",
+      "status": "completed",
+      "started-date": "13 sep 2025",
+      "expected-end-date": "14 sep 2025",
+      "end-date": "14 sep 2025",
       "link": "----",
-      "progress": 72,
+      "progress": 100,
       "milestones": {
         "background": "Complete",
         "Page": "poster",
         "Heading": "Complete",
-        "Footer": "pending",
+        "Footer": "complete",
         "Sections": "2"
 
       },
@@ -68,6 +68,7 @@
    
   ]
 }
+
 
 
 
