@@ -1,3 +1,5 @@
+
+// LOGIN FUNCTION
 function login() {
   const user = document.getElementById("username").value.trim().toLowerCase();
   const pass = document.getElementById("password").value.trim();
@@ -70,15 +72,9 @@ window.onload = function() {
       const li = document.createElement("p");
       let status = client.milestones[key];
       li.textContent = `${key}: ${status}`;
-      li.style.borderLeft = "4px solid"; // ✅ ensure visible border
+     // ✅ ensure visible border
 
-      if (status === "Complete") {
-        li.style.borderLeftColor = "#16a34a"; // green
-      } else if (status === "In Progress") {
-        li.style.borderLeftColor = "#f59e0b"; // yellow
-      } else {
-        li.style.borderLeftColor = "#ef4444"; // red
-      }
+    
       milestonesList.appendChild(li);
     }
 
@@ -104,5 +100,4 @@ function go() {
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("show");
 }
-
 
