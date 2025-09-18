@@ -5,6 +5,7 @@
       "password": "mehandi123",
       "name": "website",
       "status": "Completed",
+      "clientN": "101",
       "started-date": "03 june 2025",
       "expected-end-date": "07 june 2025",
       "end-date": "07 june 2025",
@@ -22,10 +23,31 @@
       "image": "photos-cl/Screenshot 2025-09-12 064259.png"
     },
     {
+      "username": "malabar feasts",
+      "password": "malabar590",
+      "name": " onam poster",
+      "status": "completed",
+      "clientN": "102",
+      "started-date": "05 sep 2025",
+      "expected-end-date": "05 sep 2025",
+      "end-date": "05 sep 2025",
+      "link": "----",
+      "progress": 100,
+      "milestones": {
+        "background": "Complete",
+        "Page": "poster",
+        "Heading": "Complete",
+        "Footer": "complete",
+        "Sections": "1"
+      },
+      "image": "photos-cl/clientN 102.png"
+    },
+    {
       "username": "faris",
       "password": "grand",
       "name": "e-commerce website",
       "status": "working",
+      "clientN": "103",
       "started-date": "08 sep 2025",
       "expected-end-date": "22 sep 2025",
       "end-date": "----",
@@ -46,10 +68,30 @@
       "image": "photos-cl/Screenshot 2025-08-31 130255.png"
     },
     {
+      "username": "exoon",
+      "password": "exoon98",
+      "name": " animation video",
+      "status": "working",
+      "clientN": "104",
+      "started-date": "16 sep 2025",
+      "expected-end-date": "22 sep 2025",
+      "end-date": "--",
+      "link": "----",
+      "progress": 47,
+      "milestones": {
+        "3d lap": "Complete",
+        "animation": "pending",
+        "frames": "150",
+        "layouts": "4"
+      },
+      "image": "photos-cl/exoon.png"
+    },
+    {
       "username": "iffah food products",
       "password": "iffah898",
       "name": " invitation poster",
       "status": "completed",
+      "clientN": "105",
       "started-date": "13 sep 2025",
       "expected-end-date": "14 sep 2025",
       "end-date": "14 sep 2025",
@@ -61,14 +103,9 @@
         "Heading": "Complete",
         "Footer": "complete",
         "Sections": "2"
-
       },
       "image": "photos-cl/nabbelkka.png"
     }
-   
+    
   ]
 }
-
-
-
-
