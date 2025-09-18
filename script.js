@@ -104,14 +104,5 @@ function go() {
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("show");
 }
-</script>
 
-<style>
-/* ✅ Styling for milestone borders */
-#milestones p {
-  padding: 6px 10px;
-  margin: 4px 0;
-  border-left: 4px solid transparent;
-  background: #f9fafb;
-  border-radius: 4px;
-}
+
