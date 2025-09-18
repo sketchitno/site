@@ -3,20 +3,28 @@ function login() {
   const user = document.getElementById("username").value.trim().toLowerCase();
   const pass = document.getElementById("password").value.trim();
 
-  // 🔑 Special Admin Login
-  const adminUser = "sketchno";
-  const adminPass = "green123";
-
-  if (user === adminUser && pass === adminPass) {
-    window.location.href = "admin.html"; // your admin page
-    return;
-  }
-
-  // ✅ Check JSON for client login
-  fetch("projects.json")
+  // 🔑 Check Admins from JSON
+  fetch("admins.json")
     .then(response => response.json())
-    .then(data => {
-      const client = data.projects.find(
+    .then(adminData => {
+      const admin = adminData.admins.find(
+        a => a.username.toLowerCase() === user && a.password === pass
+      );
+
+      if (admin) {
+        sessionStorage.setItem("admin", JSON.stringify(admin));
+        window.location.href = "admin.html"; // redirect to admin page
+        return;
+      }
+
+      // ✅ Check clients if not admin
+      return fetch("projects.json")
+    })
+    .then(response => response ? response.json() : null)
+    .then(clientData => {
+      if (!clientData) return; // already redirected as admin
+
+      const client = clientData.projects.find(
         p => p.username.toLowerCase() === user && p.password === pass
       );
 
@@ -28,10 +36,11 @@ function login() {
       }
     })
     .catch(err => {
-      console.error("⚠️ Error loading projects.json", err);
-      alert("⚠️ Could not load project data");
+      console.error("⚠️ Error loading JSON", err);
+      alert("⚠️ Could not load login data");
     });
 }
+
 
 // DASHBOARD FUNCTION
 window.onload = function() {
@@ -44,6 +53,7 @@ window.onload = function() {
       return;
     }
     document.getElementById("welcome").innerText = `Welcome, ${client.username}`;
+    document.getElementById("clintNo").innerText = `Customer No : ${client.clientN}`;
     document.getElementById("projectName").innerText = `Project: ${client.name}`;
     document.getElementById("started").innerText = `Started Date: ${client["started-date"]}`;
     document.getElementById("expected").innerText = `Expected End Date: ${client["expected-end-date"]}`;
