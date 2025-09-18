@@ -1,4 +1,3 @@
-// LOGIN FUNCTION
 function login() {
   const user = document.getElementById("username").value.trim().toLowerCase();
   const pass = document.getElementById("password").value.trim();
@@ -14,16 +13,15 @@ function login() {
       if (admin) {
         sessionStorage.setItem("admin", JSON.stringify(admin));
         window.location.href = "admin.html"; // redirect to admin page
-        return;
+        // 🚫 Stop further execution
+        return Promise.reject("Redirecting as admin");
       }
 
       // ✅ Check clients if not admin
-      return fetch("projects.json")
+      return fetch("projects.json");
     })
-    .then(response => response ? response.json() : null)
+    .then(response => response.json())
     .then(clientData => {
-      if (!clientData) return; // already redirected as admin
-
       const client = clientData.projects.find(
         p => p.username.toLowerCase() === user && p.password === pass
       );
@@ -36,11 +34,12 @@ function login() {
       }
     })
     .catch(err => {
-      console.error("⚠️ Error loading JSON", err);
-      alert("⚠️ Could not load login data");
+      if (err !== "Redirecting as admin") {
+        console.error("⚠️ Error loading JSON", err);
+        alert("⚠️ Could not load login data");
+      }
     });
 }
-
 
 // DASHBOARD FUNCTION
 window.onload = function() {
@@ -52,25 +51,29 @@ window.onload = function() {
       window.location.href = "login.html";
       return;
     }
+
+    // Fill client details
     document.getElementById("welcome").innerText = `Welcome, ${client.username}`;
     document.getElementById("clintNo").innerText = `Customer No : ${client.clientN}`;
     document.getElementById("projectName").innerText = `Project: ${client.name}`;
     document.getElementById("started").innerText = `Started Date: ${client["started-date"]}`;
     document.getElementById("expected").innerText = `Expected End Date: ${client["expected-end-date"]}`;
     document.getElementById("enddate").innerText = `Delivered Date: ${client["end-date"]}`;
-  document.getElementById("link").innerHTML = `Link: <a href="${client.link}" target="_blank">${client.link}</a>`;
+    document.getElementById("link").innerHTML = `Link: <a href="${client.link}" target="_blank">${client.link}</a>`;
     document.getElementById("status").innerText = `Current Status: ${client.status} (${client.progress}% Complete)`;
     document.getElementById("progress").style.width = client.progress + "%";
 
+    // Milestones
     const milestonesList = document.getElementById("milestones");
     milestonesList.innerHTML = "";
     for (let key in client.milestones) {
       const li = document.createElement("p");
       let status = client.milestones[key];
       li.textContent = `${key}: ${status}`;
+      li.style.borderLeft = "4px solid"; // ✅ ensure visible border
 
       if (status === "Complete") {
-        li.style.borderLeftColor = "#001c13ff"; // green
+        li.style.borderLeftColor = "#16a34a"; // green
       } else if (status === "In Progress") {
         li.style.borderLeftColor = "#f59e0b"; // yellow
       } else {
@@ -89,17 +92,26 @@ window.onload = function() {
 
 // LOGOUT
 function logout() {
-    sessionStorage.removeItem("client");
-    window.location.href = "login.html";
-  
+  sessionStorage.removeItem("client");
+  window.location.href = "login.html";
 }
 function go() {
-    sessionStorage.removeItem("client");
-    window.location.href = "index.html";
-  
+  sessionStorage.removeItem("client");
+  window.location.href = "index.html";
 }
+
 // Toggle mobile menu
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("show");
 }
+</script>
 
+<style>
+/* ✅ Styling for milestone borders */
+#milestones p {
+  padding: 6px 10px;
+  margin: 4px 0;
+  border-left: 4px solid transparent;
+  background: #f9fafb;
+  border-radius: 4px;
+}
