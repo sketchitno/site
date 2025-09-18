@@ -1,0 +1,7 @@
+{
+  "admins": [
+    { "username": "sketchno", "password": "green123" },
+    { "username": "alpha", "password": "beta123" },
+    { "username": "gamma", "password": "delta123" }
+  ]
+}
