@@ -113,19 +113,19 @@
       "clientN": "149",
       "started-date": "18 sep 2025",
       "expected-end-date": "19 sep 2025",
-      "end-date": "",
-      "status": "Working",
-      "progress": "10",
+      "end-date": "19 sep 2025",
+      "status": "completed",
+      "progress": "100",
       "link": "----",
       "milestones": {
-        "Names": "Pending",
-        "images": "Pending",
-        "Sections": "0",
+        "Names": "Complete",
+        "images": "Complete",
+        "Sections": "52",
         "background": "Complete",
-        "Page": "poster",
-        "": "Pending"
+        "Page": "poster"
       },
       "image": "photos-cl/clint149.png"
     }
   ]
 }
+
