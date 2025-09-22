@@ -7,7 +7,6 @@
             navLinks.classList.toggle('active');
         });
         
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -163,3 +162,4 @@ const btn = document.querySelector('.client-login-btn');
 btn.addEventListener('click', () => {
     window.location.href = 'login.html';
 });
+
