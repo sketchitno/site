@@ -3,9 +3,9 @@
     {
       "username": "famitha",
       "password": "mehandi123",
-      "name": "website",
+      "project": "website",
       "status": "Completed",
-      "clientN": "144",
+      "customeNo": "144",
       "started-date": "03 june 2025",
       "expected-end-date": "07 june 2025",
       "end-date": "07 june 2025",
@@ -25,9 +25,9 @@
     {
       "username": "malabar feasts",
       "password": "malabar590",
-      "name": " onam poster",
-      "status": "completed",
-      "clientN": "145",
+      "project": " onam poster",
+      "status": "Completed",
+      "customeNo": "145",
       "started-date": "05 sep 2025",
       "expected-end-date": "05 sep 2025",
       "end-date": "05 sep 2025",
@@ -45,11 +45,11 @@
     {
       "username": "faris",
       "password": "grand",
-      "name": "e-commerce website",
-      "status": "working",
-      "clientN": "146",
+      "project": "e-commerce website",
+      "status": "Working",
+      "customeNo": "146",
       "started-date": "08 sep 2025",
-      "expected-end-date": "22 sep 2025",
+      "expected-end-date": "30 sep 2025",
       "end-date": "----",
       "link": "----",
       "progress": 23,
@@ -70,11 +70,11 @@
     {
       "username": "exoon",
       "password": "exoon980",
-      "name": " animation video",
-      "status": "working",
-      "clientN": "147",
+      "project": " animation video",
+      "status": "Working",
+      "customeNo": "147",
       "started-date": "16 sep 2025",
-      "expected-end-date": "24 sep 2025",
+      "expected-end-date": "25 sep 2025",
       "end-date": "--",
       "link": "----",
       "progress": 47,
@@ -89,9 +89,9 @@
     {
       "username": "iffah food products",
       "password": "iffah898",
-      "name": " invitation poster",
-      "status": "completed",
-      "clientN": "148",
+      "project": " invitation poster",
+      "status": "Completed",
+      "customeNo": "148",
       "started-date": "13 sep 2025",
       "expected-end-date": "14 sep 2025",
       "end-date": "14 sep 2025",
@@ -109,12 +109,12 @@
     {
       "username": "iffah foods",
       "password": "iffah108",
-      "name": "catalogue ",
-      "clientN": "149",
+      "project": "catalogue ",
+      "customeNo": "149",
       "started-date": "18 sep 2025",
-      "expected-end-date": "19 sep 2025",
-      "end-date": "19 sep 2025",
-      "status": "completed",
+      "expected-end-date": "21 sep 2025",
+      "end-date": "21 sep 2025",
+      "status": "Working",
       "progress": "100",
       "link": "----",
       "milestones": {
@@ -125,8 +125,42 @@
         "Page": "poster"
       },
       "image": "photos-cl/clint149.png"
+    },
+    {
+      "username": "Universal Exim",
+      "password": "Universal",
+      "project": "business card",
+      "customeNo": "150",
+      "started-date": "21 sep 2025",
+      "expected-end-date": "22 sep 2025",
+      "end-date": "",
+      "status": "Working",
+      "progress": "100",
+      "link": "----",
+      "milestones": {
+        "logo": "Complete",
+        "Heading": "Complete",
+        "personal details": "Complete"
+      },
+      "image": "photos-cl/universal.png"
+    },
+    {
+      "username": "aswin",
+      "password": "aswinsir",
+      "project": "logo",
+      "customerNo": "151",
+      "started-date": "20 sep 2025",
+      "expected-end-date": "24 sep 2025",
+      "end-date": "22 sep 2025",
+      "status": "Completed",
+      "progress": "48",
+      "link": "----",
+      "milestones": {
+        "Header": "Complete",
+        "logo": "Complete"
+      },
+      "image": "photos-cl/kadalKuttu.png"
+      
     }
   ]
 }
-
-
