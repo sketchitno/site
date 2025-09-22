@@ -148,7 +148,7 @@
       "username": "aswin",
       "password": "aswinsir",
       "project": "logo",
-      "customerNo": "151",
+      "customeNo": "151",
       "started-date": "20 sep 2025",
       "expected-end-date": "24 sep 2025",
       "end-date": "22 sep 2025",
@@ -164,3 +164,4 @@
     }
   ]
 }
+
