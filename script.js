@@ -1,4 +1,3 @@
-
 // LOGIN FUNCTION
 function login() {
   const user = document.getElementById("username").value.trim().toLowerCase();
@@ -15,8 +14,7 @@ function login() {
       if (admin) {
         sessionStorage.setItem("admin", JSON.stringify(admin));
         window.location.href = "admin.html"; // redirect to admin page
-        // 🚫 Stop further execution
-        return Promise.reject("Redirecting as admin");
+        return Promise.reject("Redirecting as admin"); // stop further checks
       }
 
       // ✅ Check clients if not admin
@@ -43,25 +41,19 @@ function login() {
     });
 }
 
-// DASHBOARD FUNCTION
-window.onload = function() {
-  if (window.location.pathname.includes("dashboard.html" && "admin.html")) {
-    const client = JSON.parse(sessionStorage.getItem("client"));
-    const admin = JSON.parse(sessionStorage.getItem("admin"));
+// DASHBOARD / ADMIN RENDERING
+window.onload = function () {
+  const path = window.location.pathname;
 
+  // ✅ Client Dashboard
+  if (path.includes("dashboard.html")) {
+    const client = JSON.parse(sessionStorage.getItem("client"));
     if (!client) {
       alert("⚠️ Please log in first");
       window.location.href = "login.html";
       return;
     }
-    
-    if (!admin) {
-      alert("⚠️ Please log in first");
-      window.location.href = "login.html";
-      return;
-    }
 
-    // Fill client details
     document.getElementById("welcome").innerText = `Welcome, ${client.username}`;
     document.getElementById("customeNo").innerText = `Customer No : ${client.customeNo}`;
     document.getElementById("projectName").innerText = `Project: ${client.project}`;
@@ -77,11 +69,7 @@ window.onload = function() {
     milestonesList.innerHTML = "";
     for (let key in client.milestones) {
       const li = document.createElement("p");
-      let status = client.milestones[key];
-      li.textContent = `${key}: ${status}`;
-     // ✅ ensure visible border
-
-    
+      li.textContent = `${key}: ${client.milestones[key]}`;
       milestonesList.appendChild(li);
     }
 
@@ -91,15 +79,30 @@ window.onload = function() {
         `<img src="${client.image}" alt="Project Model" style="max-width:100%;border-radius:12px;">`;
     }
   }
+
+  // ✅ Admin Dashboard
+  if (path.includes("admin.html")) {
+    const admin = JSON.parse(sessionStorage.getItem("admin"));
+    if (!admin) {
+      alert("⚠️ Please log in first");
+      window.location.href = "login.html";
+      return;
+    }
+
+    // Example admin rendering
+    document.getElementById("adminWelcome").innerText = `Welcome, ${admin.username}`;
+    // You can expand with admin features (list projects, manage users, etc.)
+  }
 }
 
 // LOGOUT
 function logout() {
-  sessionStorage.removeItem("client");
+  sessionStorage.clear(); // removes both client and admin
   window.location.href = "login.html";
 }
+
 function go() {
-  sessionStorage.removeItem("client");
+  sessionStorage.clear();
   window.location.href = "index.html";
 }
 
@@ -107,4 +110,3 @@ function go() {
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("show");
 }
-
