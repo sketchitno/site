@@ -49,3 +49,63 @@ if (contactForm) {
     });
   });
 }
+
+    const chatbotBtn = document.getElementById("chatbot-btn");
+    const chatbot = document.getElementById("chatbot");
+    const chatBody = document.getElementById("chat-body");
+    const chatInput = document.getElementById("chat-input");
+    const sendBtn = document.getElementById("send-btn");
+
+    // Toggle chatbot open/close
+    chatbotBtn.addEventListener("click", () => {
+      chatbot.style.display = chatbot.style.display === "flex" ? "none" : "flex";
+
+      if (!chatbot.dataset.opened) {
+        addMessage("👋 Hi! I’m Sketchno AI. I’m here to help, ask me about our website!", "bot"
+);
+        chatbot.dataset.opened = "true";
+      }
+    });
+
+    // Add messages
+    function addMessage(text, sender) {
+      const msg = document.createElement("div");
+      msg.classList.add("message", sender === "user" ? "user-msg" : "bot-msg");
+      msg.textContent = text;
+      chatBody.appendChild(msg);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    // Bot reply logic
+    function botReply(userMsg) {
+      let reply = "Oops! iam  still under construction.";
+
+      // let reply = " Oops! I can only provide info about this website., bot";
+
+      if (userMsg.includes("hello") || userMsg.includes("hi") || userMsg.includes("hy")) {
+        reply = "Hello sir! How can I assist you today?";
+      } else if (userMsg.includes("time")) {
+        reply = "⏰ Current time: " + new Date().toLocaleTimeString();
+      } else if (userMsg.includes("date")) {
+        reply = "📅 Today's date: " + new Date().toLocaleDateString();
+      } else if (userMsg.includes("your name")) {
+        reply = "I’m skechno ai, your virtual assistant .";
+      }
+
+      setTimeout(() => addMessage(reply, "bot"), 1000);
+    }
+
+    // Send message
+    function sendMessage() {
+      const text = chatInput.value.trim();
+      if (text) {
+        addMessage(text, "user");
+        botReply(text.toLowerCase());
+        chatInput.value = "";
+      }
+    }
+
+    sendBtn.addEventListener("click", sendMessage);
+    chatInput.addEventListener("keypress", e => {
+      if (e.key === "Enter") sendMessage();
+    });
