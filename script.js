@@ -45,10 +45,17 @@ function login() {
 
 // DASHBOARD FUNCTION
 window.onload = function() {
-  if (window.location.pathname.includes("dashboard.html")) {
+  if (window.location.pathname.includes("dashboard.html" && "admin.html")) {
     const client = JSON.parse(sessionStorage.getItem("client"));
+    const admin = JSON.parse(sessionStorage.getItem("admin"));
 
     if (!client) {
+      alert("⚠️ Please log in first");
+      window.location.href = "login.html";
+      return;
+    }
+    
+    if (!admin) {
       alert("⚠️ Please log in first");
       window.location.href = "login.html";
       return;
@@ -56,8 +63,8 @@ window.onload = function() {
 
     // Fill client details
     document.getElementById("welcome").innerText = `Welcome, ${client.username}`;
-    document.getElementById("clintNo").innerText = `Customer No : ${client.clientN}`;
-    document.getElementById("projectName").innerText = `Project: ${client.name}`;
+    document.getElementById("customeNo").innerText = `Customer No : ${client.customeNo}`;
+    document.getElementById("projectName").innerText = `Project: ${client.project}`;
     document.getElementById("started").innerText = `Started Date: ${client["started-date"]}`;
     document.getElementById("expected").innerText = `Expected End Date: ${client["expected-end-date"]}`;
     document.getElementById("enddate").innerText = `Delivered Date: ${client["end-date"]}`;
