@@ -133,7 +133,7 @@
       "customeNo": "150",
       "started-date": "21 sep 2025",
       "expected-end-date": "22 sep 2025",
-      "end-date": "",
+      "end-date": "22 sep 2025",
       "status": "Working",
       "progress": "100",
       "link": "----",
@@ -160,11 +160,24 @@
         "logo": "Complete"
       },
       "image": "photos-cl/kadalKuttu.png"
-      
+    },
+    {
+      "username": "Universal Exim",
+      "password": "uni",
+      "project": "digital business card",
+      "customeNo": "152",
+      "started-date": "23 sep 2025",
+      "expected-end-date": "30 sep 2025",
+      "end-date": "",
+      "status": "Pending",
+      "progress": 0,
+      "link": "----",
+      "milestones": {
+        "background": "Pending",
+        "Body": "Pending",
+        "card": "Pending"
+      },
+      "image": "https://via.placeholder.com/250"
     }
   ]
 }
-
-
-
-
