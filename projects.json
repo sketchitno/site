@@ -153,7 +153,7 @@
       "expected-end-date": "24 sep 2025",
       "end-date": "22 sep 2025",
       "status": "Completed",
-      "progress": "48",
+      "progress": "100",
       "link": "----",
       "milestones": {
         "Header": "Complete",
@@ -168,14 +168,34 @@
       "customeNo": "152",
       "started-date": "23 sep 2025",
       "expected-end-date": "30 sep 2025",
-      "end-date": "",
-      "status": "Pending",
-      "progress": 0,
+      "end-date": "24 sep 2025",
+      "status": "Completed",
+      "progress": "100",
       "link": "----",
       "milestones": {
         "background": "Pending",
         "Body": "Pending",
         "card": "Pending"
+      },
+      "image": "https://via.placeholder.com/250"
+    },
+    {
+      "username": "hashim",
+      "password": "canva",
+      "project": "canva pro",
+      "customeNo": "153",
+      "started-date": "25 sep 2025",
+      "expected-end-date": "25 sep 2027",
+      "end-date": "25 sep 2025",
+      "status": "Completed",
+      "progress": "100",
+      "link": "hashimasma722@gmail.com",
+      "milestones": {
+        "gmail": "hashimasma722@gmail.com",
+        "amount" : 49,
+        "validity" : "2 year",
+        "due date" : "25 sep 2027"
+        
       },
       "image": "https://via.placeholder.com/250"
     }
