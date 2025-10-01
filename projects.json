@@ -192,14 +192,35 @@
       "link": "hashimasma722@gmail.com",
       "milestones": {
         "gmail": "hashimasma722@gmail.com",
-        "amount" : 49,
-        "validity" : "2 year",
-        "due date" : "25 sep 2027",
-        "mobile no" :"+91 85904 70427"
-        
+        "amount": 49,
+        "validity": "2 year",
+        "due date": "25 sep 2027",
+        "mobile no": "+91 85904 70427"
       },
       "image": "https://via.placeholder.com/250"
+    },
+    {
+      "username": "venmenadan",
+      "password": "typo340",
+      "project": "website",
+      "customeNo": "154",
+      "started-date": "01 oct 2025",
+      "expected-end-date": "08 oct 2025",
+      "end-date": "",
+      "status": "Working",
+      "progress": "10",
+      "link": "----",
+      "milestones": {
+       "Requirement Analysis": "Complete",
+        "Page": "single page website",
+        "Design": "Pending",
+        "Header": "Pending",
+        "Sections": "0",
+        "Footer": "Pending",
+        "Testing": "Pending"
+      },
+      "image": "https://via.placeholder.com/250"
+      
     }
   ]
 }
-
