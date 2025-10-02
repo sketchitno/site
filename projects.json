@@ -213,15 +213,16 @@
       "milestones": {
        "Requirement Analysis": "Complete",
         "Page": "single page website",
-        "Design": "Pending",
-        "Header": "Pending",
+        "Design": "working",
+        "Header": "working",
         "Sections": "0",
         "Footer": "Pending",
         "Testing": "Pending"
       },
-      "image": "https://via.placeholder.com/250"
+      "image": "photos-cl/ven.png"
       
     }
   ]
 }
+
 
