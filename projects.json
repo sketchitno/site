@@ -208,22 +208,23 @@
       "expected-end-date": "10 oct 2025",
       "end-date": "",
       "status": "Working",
-      "progress": "10",
+      "progress": "68",
       "link": "----",
       "milestones": {
        "Requirement Analysis": "Complete",
         "Page": "single page website",
         "Design": "working",
-        "Header": "working",
-        "Sections": "2",
+        "Header": "complete",
+        "Sections": "5",
         "Footer": "Pending",
         "Testing": "Pending"
       },
-      "image": "photos-cl/ven.png"
+      "image": "photos-cl/ven2.png"
       
     }
   ]
 }
+
 
 
 
