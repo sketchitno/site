@@ -215,7 +215,7 @@
         "Page": "single page website",
         "Design": "working",
         "Header": "working",
-        "Sections": "0",
+        "Sections": "2",
         "Footer": "Pending",
         "Testing": "Pending"
       },
@@ -224,5 +224,6 @@
     }
   ]
 }
+
 
 
