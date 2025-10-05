@@ -207,23 +207,24 @@
       "started-date": "02 oct 2025",
       "expected-end-date": "10 oct 2025",
       "end-date": "",
-      "status": "Working",
-      "progress": "68",
-      "link": "----",
+      "status": "Complete",
+      "progress": "100",
+      "link": "venmenadan.online",
       "milestones": {
        "Requirement Analysis": "Complete",
         "Page": "single page website",
-        "Design": "working",
+        "Design": "Complete",
         "Header": "complete",
-        "Sections": "5",
-        "Footer": "Pending",
-        "Testing": "Pending"
+        "Sections": "7",
+        "Footer": "Complete",
+        "Testing": "Complete"
       },
       "image": "photos-cl/ven2.png"
       
     }
   ]
 }
+
 
 
 
