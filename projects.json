@@ -211,7 +211,7 @@
       "progress": "100",
       "link": "venmenadan.online",
       "milestones": {
-       "Requirement Analysis": "Complete",
+        "Requirement Analysis": "Complete",
         "Page": "single page website",
         "Design": "Complete",
         "Header": "complete",
@@ -220,12 +220,28 @@
         "Testing": "Complete"
       },
       "image": "photos-cl/ven2.png"
-      
+    },
+    {
+      "username": "fyscreations",
+      "password": "fys123",
+      "project": "website",
+      "customeNo": "155",
+      "started-date": "13 nov 2025",
+      "expected-end-date": "20 nov 2025",
+      "end-date": "",
+      "status": "Pending",
+      "progress": 0,
+      "link": "----",
+      "milestones": {
+        "Requirement Analysis": "pending",
+        "Page": "single page website",
+        "Design": "p",
+        "Header": "pending",
+        "Sections": "0",
+        "Footer": "pending",
+        "Testing": "pending"
+      },
+      "image": ""
     }
   ]
 }
-
-
-
-
-
